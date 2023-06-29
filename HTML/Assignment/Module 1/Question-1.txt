@@ -1,0 +1,46 @@
+      1  do you search website
+
+   ===>    A website is a collection of web pages that are interconnected and hosted on a web server. It is accessible through 
+           the internet and can be viewed using a web browser. Websites can contain various types of content, such as text, images, 
+           videos, and interactive elements.
+
+   ===>    Types of Website:
+
+               1) Static Website :
+               2) Dynamic Website:
+ 
+   ===>    static Website :- static website is create simple language such as HTML CSS or JAVA SCRIPT their is no content
+                             on the server (according to users) in a static Website there is no interaction with database,
+
+   ===>    Dynamic Website :- Dynamic Websites, Web pages are returned by  server which is processed during tun time they
+                              not prebuilt webpage but they are built during runtime according to the user’s demand with 
+                              the help of server-side scripting languages
+                              such as PHP, Node.js, ASP.NET and many more supported by the server     
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+      2 Do search http
+
+  ===>  HTTP stands for Hyper Text Transfer Protocol
+
+        is about communication between web clients and servers
+
+        Communication between client computers and web servers is done by 
+        sending HTTP Requests and receiving HTTP Responses
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+      3 Do search URL 
+
+  ===>  URL stands for( Uniform Resource Locator.)
+        A URL is nothing more than the address of a given unique resource on the Web. 
+        each valid URL points to a unique resource. Such resources can be an HTML page, a CSS document, an image, etc
+        As the resource represented by the URL and the URL itself are handled by the Web server
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+       
