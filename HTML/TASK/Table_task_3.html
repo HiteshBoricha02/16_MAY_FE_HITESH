@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Table 3 Task</title>
     <style>
+        table,th,td{border: 1px solid; border-collapse: collapse;}
         
     </style>
 </head>
 <body>
-    <table border="">
+    <table>
         <caption>Task table 3</caption>
         <thead>
             <tr>
@@ -35,22 +36,32 @@
         <tr>
             <td>Validity DTD and Relax NG</td>
         </tr>
-        <tr>
-        <td rowspan="3">Tuesday</td>
-        <td>8:00 a.m.</td>
-        <td>11:00 a.m.</td>
-        <td rowspan="2">Xpath</td>
-        </tr>
-        <tr>
-            <td>11:00 a.m.</td>
-            <td>02:00 p.m.</td>
+        <tbody>
+            <tbody>
 
-        </tr>
-        <tr>
-            <td>02:00 p.m.</td>
-            <td>05:00 p.m.</td>
-            <td rowspan="1">XSL Transformation</td>
-        </tr>
+                <tr>
+                    <td rowspan="3">Tuesday</td>
+                    <td>8:00 a.m.</td>
+                    <td>11:00 a.m.</td>
+                    <td rowspan="3">
+                        <table cellpadding="10">
+                            <tr><td >XPath</td></tr>
+                            <tr><td>XSL Transformation</td></tr>                         
+                        </table>
+                        </td>
+                        </tr>
+                <tr>
+                    <td>11:00 a.m.</td>
+                    <td>02:00 p.m.</td>
+                    
+                </tr>
+                <tr>
+                    <td>02:00 p.m.</td>
+                    <td>05:00 p.m.</td>
+                    
+                </tbody>
+            </tr>
+        </tbody>
         <tr>
             <td>Wednesday</td>
             <td>8:00 a.m.</td>
