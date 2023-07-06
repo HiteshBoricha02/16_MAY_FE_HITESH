@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-10</title>
+</head>
+<body>
+    <h2> How can We Club two or more rows or columns into a Single row or column  in an HTML</h2>
+    <h3> you can use the rowspan and colspan attributes to combine multiple rows or columns into a single row or column, respectively.</h3>
+    <h2> rowspan :</h2>
+    <h3> rowspan is used to  span two or more row in one row</h3>
+    <h2>Example : </h2>
+    <table border="1px">
+        <caption> rowspan</caption>
+        <tr>
+            <th>employee ID</th>
+            <th> NAME</th>
+            <th>sealery</th>
+        </tr>
+        <tr>
+            <td> 101</td>
+            <td> Mihir</td>
+            <td rowspan="2"> 50,000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Hitesh</td>
+            
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>raaj</td>
+            <td rowspan="2">15,000</td>
+        </tr>
+        <tr>
+         <td>104</td>
+         <td>Bhagirath</td>
+        </tr>
+    </table>
+    <br>
+    <h2> Colspan :</h2>
+    <h3> Colspan is used to two or more Column span in one column</h3>
+    <br>
+    <h2> Example :</h2>
+    <table border="2px">
+        <caption> Colspan</caption>
+        <tr>
+            <th>employee ID</th>
+            <th> NAME</th>
+            <th colspan="2">sealery</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Hitesh</td>
+            <td>50,000</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Mihir</td>
+            <td>100000</td>
+        </tr>
+            <td colspan="3">Total Employee : 2</td>
+        </tr>
+
+    </table>
+</body>
+</html>
