@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before </title>
+    <style>
+        div{ counter-reset: 'c';}
+
+
+        h1::before{ content: counter(c) ".";
+        counter-increment: c ;
+        }
+
+        h1{ counter-reset: 'd';}
+
+        h1::before{ content: counter(c)'.' counter(d)'.';
+        counter-increment: d;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Hot Drink</h1>
+       <h4>Tea</h4>
+       <h4>Coffee</h4>
+       <h1> Cold Drink </h1>
+       <h4>cold Coffee</h4>
+       <h4> Sprite</h4>
+       <h4> thums up </h4>
+       <h4> coca-cola</h4>
+    </div>
+</body>
+</html>
