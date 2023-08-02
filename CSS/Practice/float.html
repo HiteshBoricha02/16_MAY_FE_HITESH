@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+       .father{
+              height: auto;
+              width: auto;
+              /* border: 1px solid black; */
+              background: black;
+
+             }
+        .ch{ 
+              height: 150px;
+              width: 50%;
+              background: white;
+              border: 1px solid blue;
+              float: left;
+        }
+
+        .h2{ 
+              float: right;
+              clear: left;
+        }
+        .h3{
+              float: left;
+              clear: right;
+        }
+        .h4{
+              float: right;
+              clear: left;
+        }
+        .h5{ 
+              float: left;
+              clear: right;
+        }
+        .h6{
+              clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class=" ch h1">child 1</div>
+        <div class=" ch h2">child 2</div>
+        <div class=" ch h3">child 3</div>
+        <div class=" ch h4">child 4</div>
+        <div class=" ch h5">child 5</div>
+        <div class="h6"></div>
+    </div>
+</body>
+</html>
