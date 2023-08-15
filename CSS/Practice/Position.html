@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 1500px;
+            border: 1px solid black;
+            background: gray;
+        }
+
+        .main .base {
+            height: 200px;
+            width: 100%;
+            border: 1px outset red;
+            color: azure;
+        }
+        .main .h1 {
+            background-color: brown;
+            position: static;
+            top: 100px;
+            left: 50px;
+        }
+        
+        .main .h2{
+            background-color: blueviolet;
+            position: sticky;
+            top: 100px;
+            left:0px;
+
+        }
+
+        .main .h3{
+            height: 300px;
+            width: 25%;
+            background-color: black;
+            position: fixed;
+            top: 200px;
+            left: 700px;
+            border-radius: 20px 0 20px 0;
+            box-shadow: 0 0 10px white;
+            z-index: 2;
+        }
+
+        .main .h4{
+            background-color: lightblue;
+            height: 400px;
+            position: relative;
+        
+        }
+        .main .h4 .Item{
+            height: 200px;
+            background-color: #f0f0a0;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            z-index: 1; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="base h1">static</div>
+        <div class="base h2">sticky</div>
+        <div class="base h3">Fixed</div>
+        <div class="base h4">relative
+
+           
+            <div class="base Item"> Item Absolute</div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
