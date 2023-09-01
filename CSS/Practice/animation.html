@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .spin{
+            height: 200px;
+            width: 200px;
+            border-top: 10px outset blueviolet;
+            border-radius: 50%;
+            border-bottom: 10px outset red; 
+            animation: linear;
+            animation-duration: 1s;
+            animation-name: spinner;
+            animation-iteration-count: infinite ;
+            animation-delay: 1s;
+            animation-play-state: running;
+            position: relative;
+
+        }
+
+        @keyframes spinner{
+           0% {
+                transform: rotate(0deg);
+                border-color: blueviolet;
+                top: 0%;
+                left: 0%; 
+            
+            }
+
+            25%{
+                transform: rotate(90deg);
+                border-color: blue;
+                top: 35px;
+                left: 25%;
+            }
+            50%{
+               transform: rotate(180deg);
+               border-color: red;
+               top: 35px;
+               left: 50%;
+            }
+
+             75%{
+                transform: rotate(360deg);
+                border-color: chocolate;
+                top: 35px;
+                left: 75%;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="spin">
+      
+    </div>
+</body>
+</html>
