@@ -1,0 +1,222 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+.first-head {
+    width: 40%;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    line-height: 2;
+
+
+}
+
+.first-head span {
+    color: green;
+}
+
+.head-1 {
+    width: 6%;
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30px;
+
+
+}
+
+.head-1:hover {
+    color: green;
+    transition: 1s;
+
+
+}
+
+.header .head-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.header .head-1 a hr {
+    width: 0px;
+    margin-left: 12%;
+    height: 3px;
+    background-color: green;
+    border: none;
+}
+
+.header .head-1:hover a {
+    color: green;
+    transition: 1s;
+}
+
+
+.header .head-1:hover a hr {
+    width: 70%;
+    color: green;
+    transition: 1s;
+
+}
+
+.head-1 span {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head-1 span:hover {
+    border-bottom: 1px solid green;
+
+    transition: 1s;
+}
+
+.freeQuote a button {
+    color: black;
+    font-size: 20px;
+    border: 1px solid green;
+    text-align: center;
+    line-height: 2;
+    height: 50px;
+    width: 170px;
+    border-radius: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+    background-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.freeQuote a button:hover {
+    background: white;
+    color: green;
+    transition: 1s;
+    border: 2px solid green;
+
+}
+
+/* section start */
+
+#sec-1 {
+    position: relative;
+}
+
+.section-1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+
+#sec-1 img {
+    filter: brightness(30%);
+
+}
+
+.section-1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0%;
+    font-family: sans-serif;
+}
+
+.section-1 span {
+    color: green;
+}
+
+.section-1 p {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#form h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.form-inp {
+    margin-left: 8%;
+}
+
+.form-inp input{
+    height: 50px;
+    width: 41%;
+    margin-left: 2%;
+    margin-top: 3%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.inp-1 input {
+    width: 85%;
+    height: 120px;
+}
+
+.form-inp input:focus{
+    outline: 2px solid green;
+    border: none;
+}
+
+.form-inp button{
+    margin-top: 2%;
+    height: 50px;
+    width: 200px;
+    margin-left: 73%;
+    border-radius: 30px;
+    background: green;
+    border: 2px solid green;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.form-inp button:hover{
+    background: transparent;
+    color: green;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form-inp button:focus{
+    background: red;
+    color: white;
+    border: none;
+}
+
+#cnt{
+    display: flex;
+    margin-left: 5%;
+}
+
+#cnt .cnt-1{
+    height: 100px;
+    width: 350px;
+    color: white;
+    background: black;
+    margin-left: 5%;
+     margin-top: 5%; 
+    text-align: center;
+    border-radius: 10px;
+    
+}  
+
+.cnt-1 div{
+    padding-top: 5%;
+}
