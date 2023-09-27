@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+         .contain{
+            width: 100%;
+            height: auto;
+            border: 3px groove red;
+            display: grid;
+            /* grid-area: 1/ 1/ 2/ 4; */
+            background:  #b2d6ff;
+            grid-template-rows: 150px 200px 70px 230px;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+
+
+        }
+
+        .contain .p1{
+            grid-area: 1/ 1/ 2/ 4;
+            background:  #b2d6ff;
+        }
+
+        .contain .p2{
+            grid-area: 2/ 1/ 3/ 2;
+            background: #f5cf8e;
+        }
+
+        .contain .p3{
+            grid-area: 2/ 2/ 3/ 3;
+            background:  #c8c6fa;;
+        }
+
+        .contain .p4{
+            grid-area: 2/ 3/ 3/ 4;
+            background:  #f09a9d;;
+        }
+
+        .contain .p5{
+            grid-area: 3/ 1/ 4/ 4;
+            background:  #d6e9fe;;
+        }
+
+        .contain .p6{
+            grid-area: 4/ 1/ 5/ 4;
+            background: #eaedf0;;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+
+        <div class="pic p1">1</div>
+        <div class="pic p2">2</div>
+        <div class="pic p3">3</div>
+        <div class="pic p4">4</div>
+        <div class="pic p5">5</div>
+        <div class="pic p6">6</div>
+
+        
+    </div>
+</body>
+</html>
