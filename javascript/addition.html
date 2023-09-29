@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition-js</title>
+    <style>
+
+        
+        div{
+            height: 200px;
+            width: 25%;
+            border: 2px solid red;
+            margin: auto;
+            
+        }
+
+        input{
+            display: block;
+            height: 20px;
+            text-align: right;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <label for="fv">First value</label>
+        <input type="text" name="fv" title="fv" id="input1">
+        
+        <label for="sv">Second value</label>
+        <input type="text" name="fv" title="fv" id="input2">
+        
+        Answer : <input type="text" name="ans" title="ans"  id="answer">
+
+
+        <!-- addition -->
+        <button  onclick="add()">Addition</button>
+          
+        <!-- subtraction -->
+         <button onclick="sub()">Subtraction</button>
+
+
+         <!-- multiplication -->
+         <button onclick="mul()">multiplication</button>
+
+         <!-- division -->
+         <button onclick="div()">division</button>
+
+
+         <!-- modulo -->
+         <button onclick="mod()">Modulo</button>
+         
+       
+
+
+        
+    </div>
+
+
+   <script>
+
+    var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+    var answer = document.getElementById('answer');
+
+    function add(){
+        answer.value = parseInt (input1.value) + parseInt (input2.value);
+    }
+
+
+    function sub() {
+        answer.value = parseInt (input1.value) - parseInt (input2.value);
+    }
+
+    function mul() {
+        answer.value = parseInt (input1.value) * parseInt (input2.value);
+        
+    }
+
+    function div() {
+        answer.value = parseInt (input1.value) / parseInt (input2.value);
+        
+    }
+
+    function mod() {
+        answer.value = parseInt (input1.value) % parseInt (input2.value);
+        
+    }
+    
+
+   </script>
+</body>
+</html>
