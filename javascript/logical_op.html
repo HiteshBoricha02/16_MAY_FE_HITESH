@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical_op</title>
+
+
+    <style>
+        #h1{
+            color: red;
+            font-size: 50px;
+            font-family: sans-serif;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="h1"></p>
+
+
+    <script>
+        var X =  parseInt ( prompt('Enter The value of X'));
+        var Y =  parseInt ( prompt ('Enter The value of Y'));
+
+
+        if (((X==Y)&&(X<=Y))) {
+            document.getElementById("h1").innerHTML = 'Both value same'
+            
+        } else {
+            document.getElementById("h1").innerHTML = 'invalid value'
+        }
+    </script>
+</body>
+</html>

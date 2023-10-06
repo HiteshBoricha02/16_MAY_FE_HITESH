@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational_op</title>
+
+    <style>
+        #p1{
+            color: brown;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: sans-serif; 
+        }
+    </style>
+</head>
+<body>
+   <p id="p1"></p>
+
+    <script>
+         let A = parseInt(prompt ('Enter The value of A'));
+         let B = parseInt(prompt ( 'Enter The value of B'));
+
+         if ( A > B) {
+
+            document.getElementById("p1").innerHTML ='The value of A is big';
+            
+         }
+
+         else if (A == B) {
+            document.getElementById("p1").innerHTML ='A And B Both Are same';
+         }
+         
+         
+         else {
+            document.getElementById("p1").innerHTML ='The Value of B is Big';
+         }
+    </script>
+</body>
+</html>
