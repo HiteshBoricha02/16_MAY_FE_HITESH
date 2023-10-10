@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Even</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+
+
+    <script>
+let number = parseInt( prompt("Enter a number: "));
+
+//check if the number is even
+if(number % 2 == 0) {
+    document.getElementById("h1").innerHTML =("The number is even.");
+}
+
+// if the number is odd
+else {
+    document.getElementById("h1").innerHTML =("The number is odd.");
+}
+    </script>
+</body>
+</html>
