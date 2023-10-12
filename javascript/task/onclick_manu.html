@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>onclick menu</title>
+
+    <style>
+        button{
+            background: transparent;
+            border: none;
+            margin-left: 30%;
+            
+        }
+
+
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 30%;
+        }
+
+        p:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button onclick=" menu()"><i class="fa-solid fa-bars fa-2xl"></i></button>
+
+    <div id="click">
+       <p>HOME</p>
+       <p>ABOUT</p>
+       <p>SERVICES</p>
+       <p>GALLERY</p>
+       <p>PAGES</p>
+       <p>CONTACT</p>
+    </div>
+
+
+    <script>
+        let hitesh = document.getElementById('click').style.display = 'none';
+
+
+       function menu() {
+        let hitesh = document.getElementById('click').style.display = 'inline';
+       }
+    </script>
+
+</body>
+</html>
