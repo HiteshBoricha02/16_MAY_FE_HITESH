@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swap_without_using_third_variable</title>
+</head>
+<body>
+    
+
+    <script> 
+    var x = parseInt(prompt('Enter The Value of x:')); 
+    var y = parseInt(prompt('Enter The value of y:')); 
+  
+    document.write("Before swapping:" + " x = " +  
+        x + ", y = " + y ); 
+    
+    // Code to swap 'x' and 'y' 
+    x = x * y;
+    y = x / y; 
+    x = x / y;    
+  
+    document.write("<br> After swapping:" + " x = " +  
+        x + ", y = " + y); 
+
+    </script>
+</body>
+</html>
