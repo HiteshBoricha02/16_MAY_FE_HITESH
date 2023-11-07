@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    width: 99%;
+    height: 100vh;
+    background-color: black;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 28vh 28vh 28vh 10vh;
+    gap: 10px 10px;
+}
+
+.box .item {
+    text-align: center;
+    background-color: rgb(226, 191, 115);
+    font-size: 25px;
+}
+
+.box .item IMG {
+    height: 100%;
+    width: 100%;
+}
+
+.i-1 {
+
+    grid-column: span 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.i-2 {
+
+    grid-column: span 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.i-3 {
+
+    grid-column: span 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.i-4 {
+
+    grid-column: span 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.i-5 {
+    grid-column: span 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.i-6 {
+    grid-column: span 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.i-7 {
+    grid-column: span 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.i-8 {
+    grid-column: span 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.i-9 {
+    grid-column: span 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.i-10 {
+    grid-column: span 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
