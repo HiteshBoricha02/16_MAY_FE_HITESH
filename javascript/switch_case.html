@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch_case</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let X = parseInt(prompt("Enter the value of X :"));
+        let Y = parseInt(prompt("Enter the value of Y :"));
+
+        let choice = (prompt("Enter Your Choice :"));
+
+        switch(choice)
+        {
+            case'+':
+            document.write("Addition of X And Y is :" + (X + Y ));
+            break;
+
+
+            case'-':
+            document.write("Substation of X And Y is :" + (X-Y));
+            break;
+
+
+            case'*':
+            document.write("Multiplication of X And Y is :" + (X*Y));
+            break;
+
+
+            case'/':
+            document.write("Division of X And Y is :" + (X/Y));
+            break;
+
+            case'%':
+            document.write("Modulo of X And Y is :" + (X%Y));
+            break;
+
+            default:
+            document.write("Please Enter The valid input");
+            break;
+
+
+
+            
+        }
+    </script>
+</body>
+</html>

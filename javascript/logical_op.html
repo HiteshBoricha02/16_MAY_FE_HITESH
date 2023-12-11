@@ -25,12 +25,27 @@
         var Y =  parseInt ( prompt ('Enter The value of Y'));
 
 
-        if (((X==Y)&&(X<=Y))) {
-            document.getElementById("h1").innerHTML = 'Both value same'
+        if (((X == Y)&&(X <= Y))) {
+            document.getElementById("h1").innerHTML = 'condition is true for logical &&'
             
-        } else {
-            document.getElementById("h1").innerHTML = 'invalid value'
+        } 
+        else if (((X > Y)||(X >= Y))) {
+            document.getElementById("h1").innerHTML = 'condition is true for logical ||'
+            
         }
+
+
+        else if (!((X > Y ) | (X == Y))) {
+            document.getElementById("h1").innerHTML = 'condition is true for logical !'
+        }
+
+
+
+        else {
+            document.getElementById("h1").innerHTML = 'condition invalid value'
+
+        }
+
     </script>
 </body>
 </html>

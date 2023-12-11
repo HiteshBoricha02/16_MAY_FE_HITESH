@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the calculator container */
+.calculator {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Style for the screen */
+.screen {
+    text-align: right;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+#display {
+    width: 100%;
+    padding: 5px;
+    font-size: 24px;
+    border: none;
+    /* background-color: transparent; */
+    color: black;
+    outline: none;
+}
+
+/* Style for calculator buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: #777;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #ddd;
+    
+}
+
+/* Style for operator buttons */
+.hitesh {
+    color: black;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: whitesmoke;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="display" placeholder="0">
+        </div>
+        <div class="buttons">
+            <button class="hitesh">C</button>
+            <button class="hitesh">/</button>
+            <button class="digit">1</button>
+            <button class="digit">2</button>
+            <button class="hitesh">*</button>
+            <button class="digit">3</button>
+            <button class="digit">4</button>
+            <button class="digit">5</button>
+            <button class="hitesh">-</button>
+            <button class="digit">6</button>
+            <button class="digit">7</button>
+            <button class="digit">8</button>
+            <button class="hitesh">+</button>
+            <button class="digit">9</button>
+            <button class="digit">0</button>
+            <button class="operator">.</button>
+            <button  class="digit">=</button>
+            <button  class="digit">DEL</button>
+        </div>
+    </div>
+    <script>
+        let result = '';
+        let buttons = document.querySelectorAll("button");
+        let input = document.querySelector("input");
+        for(i of buttons){
+            i.addEventListener('click', function(x){
+                buttonText = x.target.innerText;
+                console.log(buttonText);
+
+                if (buttonText == "=") {
+            result = eval(result);
+            input.value = result;
+            result ='';
+        }
+        else if(buttonText=="C"){
+            result='';
+            input.value=result;
+        }
+        else if(buttonText=="DEL"){
+             result=result.slice(0,-1)
+             input.value=result;
+        }
+  
+        else {
+            result += buttonText;
+            input.value = result;
+        }
+            });
+        }
+    </script>
+</body>
+</html>
