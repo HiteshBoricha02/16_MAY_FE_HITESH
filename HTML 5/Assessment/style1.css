@@ -1,0 +1,122 @@
+body {
+    background: powderblue;
+}
+
+header {
+    width: 96%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+header p {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.main {
+    height: auto;
+    width: 96%;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main .sec-1 {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.main .sec-2 .fa-phone {
+    color: white;
+    background: red;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.main .sec-2 .no {
+    color: red;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.main .sec-2 .fa-envelope {
+    background: white;
+    color: lightskyblue;
+}
+
+.main .sec-2 .mail {
+    color: lightskyblue;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.main .sec-3 .fa-location-dot {
+    color: red;
+}
+
+.content {
+    width: 96%;
+    margin: auto;
+    margin-top: 30px;
+    height: auto;
+    background: white;
+    display: flex;
+}
+
+.content .form {
+    height: 450px;
+    width: 50%;
+}
+
+.content .form input {
+    width: 280px;
+    padding: 15px;
+    margin: 15px;
+    font-family: sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.content .form input:focus {
+    outline-color: aqua;
+    transition: 0.5s;
+}
+
+.content .form textarea:focus {
+    outline-color: aqua;
+    transition: 0.5s;
+}
+
+.content .form textarea {
+    padding: 15px;
+    margin: 15px;
+    font-family: sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.content .btn {
+    padding: 15px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.content .map {
+    padding: 20px;
+    width: 50%;
+    height: 450px;
+}
+
+.content .map .icon i {
+    margin: 10px;
+}
