@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-18</title>
+    <style>
+        div{
+            height: 70vh;
+            width: 40vw;
+            border: 1px solid red;
+            margin: auto;
+            /* text-align: center; */
+
+        }
+
+
+        input{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        
+           <form action="">
+
+               
+               <label for="">Pass word : </label>
+               <input type="password" id="password">
+               
+               <input type="checkbox" id="checkbox" onclick="bn()">Show password
+               <!-- <label for="">Conform Password:</label>
+                <input type="text"> -->
+            </form>
+        
+    </div>
+
+    <script>
+        function bn(){
+
+            let bn = document.getElementById("password");
+            
+            if(checkbox.checked){
+                bn.type='text';
+            }
+            else{
+                bn.type = 'password'
+            }
+        }
+    </script>
+</body>
+</html>
