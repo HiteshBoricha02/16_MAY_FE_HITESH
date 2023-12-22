@@ -1,0 +1,53 @@
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+    /* width: 40vw; */
+    
+}
+
+form{
+    border: 1px solid black;
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYhEBnVM30oknlr8re40FX4WgLgwA5Ng9O0g&usqp=CAU");
+    background-size: cover;
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+}
+
+button{
+    margin-left: 250px;
+    height: 50px;
+    width: 130px;
+    background: #ed6663;
+    color: white;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+button:hover{
+    background: #0f4c81;
+    transition: 1s ;
+}
+
+label,input{
+    margin-left: 180px;
+    
+}
+
+#bookingType{
+    margin-left: 330px;
+}
+
+#slot{
+    margin-left: 180px;
+}
+
+
+
