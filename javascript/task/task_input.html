@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            height: 380px;
+            width: 300px;
+            border: double;
+            margin: auto;
+            text-align: center;
+            border-radius: 4%;
+        }
+        input{
+            height: 20px;
+            width: 250px;
+            margin-top: 4%;
+            
+            
+            
+        }
+        h1{
+            text-align: center;
+        }
+
+        button{
+            height: 40px;
+            width: 42%;
+            margin-top: 8%;
+            border-radius: 7px;
+            
+        }
+
+        label{
+            margin-left: 20px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <form action="">
+
+            
+            <input type="text" placeholder="First Name :">
+            <input type="text" placeholder="Last Name :">
+            <input type="email" placeholder="Email :">
+            <input type="tel" placeholder="Mobile No :">
+            <!-- <input type="password" placeholder="Password :"> -->
+            <input type="password" id="password" placeholder="Password">
+     
+               <input type="checkbox" id="checkbox" onclick="bn()">
+               
+            <input type="text" id="permanent_address" placeholder="permanent Address :" onkeyup="inp_text()">
+            <input type="text" id="local_address" placeholder="Local Address :">
+            
+            <button type="submit">Submit</button> <button type="reset">Reset</button>
+        </form>
+        
+        </div>
+        <script>
+            
+        function inp_text()
+        {
+            let t_add = document.getElementById("permanent_address").value;
+            
+            document.getElementById("local_address").value = t_add;
+        }
+
+        function bn(){
+
+       let bn = document.getElementById("password");
+
+       if(checkbox.checked){
+       bn.type='text';
+         }
+
+         
+      else{
+    bn.type = 'password'
+      }
+     }
+    </script>
+</body>
+</html>
