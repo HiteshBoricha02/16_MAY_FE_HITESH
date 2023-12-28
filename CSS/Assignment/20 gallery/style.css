@@ -1,92 +1,115 @@
-body {
-    margin: 0;
-    padding: 0;
+.main {
+    height: 100%;
+    width: 100%;
+    background: black;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 200px 220px 200px 180px;
+    grid-template-columns: 230px 200px 230px 200px 200px 190px;
 }
 
 .box {
-    margin: auto;
-    display: grid;
-    justify-content: center;
-    width: 99%;
-    height: 100vh;
+    border: 3px solid black;
+}
+
+.h-1 {
+    background-image: url("http://files.all-free-download.com/downloadfiles/wallpapers/1920_1080/peaceful_lake_wallpaper_landscape_nature_1208.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 1/ 1/ 2/ 5;
+}
+
+.h-2 {
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.Z7JiQaFe5xBABL7QsL8kSAHaE8&pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 1/ 5/ 2/ 7;
+}
+
+.h-3 {
+    background-image: url("https://wallpapercave.com/wp/wp2568544.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-area: 2/ 1/ 3/ 2;
+}
+
+.h-4 {
+    background-image: url("https://cdn.thinglink.me/api/image/659458262214639617/1024/10/scaletowidth/0/0/1/1/false/true?wait=true");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 2/ 2/ 3/ 6;
+}
+
+.h-5 {
+    background-image: url("https://images.toucharger.com/img/graphiques/fonds-d-ecran/nature--paysages/plage/le-reve.72442.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 2/ 6/ 3/ 7;
     background-color: black;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 28vh 28vh 28vh 10vh;
-    gap: 10px 10px;
 }
 
-.box .item {
-    text-align: center;
-    background-color: rgb(226, 191, 115);
-    font-size: 25px;
+.h-6 {
+    background-image: url("https://wallpapercave.com/wp/wp2555019.jpg");
+    filter: grayscale(50);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 3/ 1/ 4/ 4;
 }
 
-.box .item IMG {
-    height: 100%;
-    width: 100%;
+.h-7 {
+    background-image: url("https://cdn.wallpapersafari.com/43/42/IwWBH3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 3/ 4/ 4/ 7;
 }
 
-.i-1 {
-
-    grid-column: span 8;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.h-8 {
+    background-image: url("https://wheresmytable.files.wordpress.com/2016/01/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 4/ 1/ 5/ 3;
 }
 
-.i-2 {
-
-    grid-column: span 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.h-9 {
+    background-image: url("https://marketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 4/ 3/ 5/ 5;
 }
 
-.i-3 {
-
-    grid-column: span 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.h-10 {
+    background-image: url("http://s1.picswalls.com/wallpapers/2017/12/11/nature-desktop-background_123026895_313.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: 4/ 5/ 5/ 7;
 }
 
-.i-4 {
-
-    grid-column: span 6;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.h-11 {
+    grid-area: 1/ 7/ 5/ 8;
+    background-color: black;
+    padding-right: 20px;
 }
 
-.i-5 {
-    grid-column: span 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.h-11 .h1 {
+    color: #fff;
+    text-align: right;
 }
 
-.i-6 {
-    grid-column: span 6;
-    grid-row-start: 3;
-    grid-row-end: 3;
+.h-11 .h3 {
+    color: rgb(158, 4, 4);
+    text-align: right;
 }
 
-.i-7 {
-    grid-column: span 6;
-    grid-row-start: 3;
-    grid-row-end: 3;
+.h-11 .h4 {
+    color: #fff;
+    text-align: right;
 }
 
-.i-8 {
-    grid-column: span 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
+.h-11 .h5 {
+    color: #fff;
+    text-align: right;
 }
 
-.i-9 {
-    grid-column: span 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
-}
-
-.i-10 {
-    grid-column: span 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-
+a {
+    text-decoration: none;
 }
