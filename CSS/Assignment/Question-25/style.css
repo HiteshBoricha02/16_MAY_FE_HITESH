@@ -2,111 +2,277 @@ body {
     background: #FBFAFE;
 }
 
-/* -----------------------------------------------HEADER----------------------------------------- */
-header {
-    width: 100%;
-    height: 50px;
+/* -----------------------------------------------HEADER START----------------------------------------- */
+
+
+header .bar .bar-line {
+    display: none;
+}
+
+header .bar {
     display: flex;
     justify-content: space-evenly;
 }
 
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* company logo */
+
 header .logo {
-    margin-top: -25px;
-    padding: 0%;
+    display: flex;
+    margin-top: -8px;
+}
+
+header .logo .txt {
     color: #1D2830;
-    font-family: Josefin Sans;
+    font-family: Josefin sans;
     font-size: 24px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 24px;
     /* 100% */
     letter-spacing: -1.44px;
 }
 
-header ul li {
-    display: inline-block;
-    padding: 0px 5px;
-    list-style: none;
-    cursor: pointer;
-}
-
-header li span {
-    background-color: #ECE5FF;
-    border-radius: 4px;
+header .logo .dot {
     color: #794CFF;
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -1.44px;
 }
 
-.menu {
+/* Menu item Start */
+
+header .menu {
     display: flex;
+    margin-right: 100px;
+    /* width: 100%; */
 }
 
-.menu img {
+header .menu .items {
+    margin-top: 15px;
+
+    color: #35414B;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 40px;
+    /* 100% */
+}
+
+.m-1{
     display: none;
 }
 
-.menu img {
-    height: 50px;
-    width: 50px;
-}
+/* Log in css */
 
-.offer span {
-    background: #81C43B;
-    padding: 0px 5px;
-    border-radius: 5px;
-}
-
-.manage {
-    width: 50%;
-    margin: auto;
-    color: #35414B;
-    font-size: 64px;
-    font-weight: 600;
-}
-
-.offer,
-.manage,
-.info,
-.mail {
-    text-align: center;
-}
-
-.mail button {
-    background-color: #794CFF;
-    border: none;
-    color: #FFF;
-    border-radius: 5px;
-}
-
-.mail input,
-.mail button {
-    padding: 5px;
-}
-
-.img-1 {
-    width: 70%;
-    height: 70vh;
-    margin: 5px auto;
-    text-align: center;
-}
-
-.img-1 img {
-    height: inherit;
-    width: inherit;
-}
-
-.logo {
-    width: 100%;
-    height: 70px;
-    /* border: 1px solid; */
+header .log-in {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.logo img {
-    height: inherit;
-    width: inherit;
+header .log-in .items {
+    color: #35414B;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 15px;
+    margin-right: 20px;
+    /* 100% */
 }
 
-/* --------------------------------------------------section-2-------------------------------------------------- */
+header button {
+    width: 169px;
+    height: 48px;
+    border-radius: 4px;
+    background: #ECE5FF;
+
+    color: #794CFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border: none;
+    /* 100% */
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+.discount {
+    border-radius: 100px;
+    background: #F2F9EB;
+    width: 259px;
+    height: 32px;
+
+    color: #35414B;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 100% */
+
+    margin: 200px auto 0 auto;
+}
+
+.discount span {
+    border-radius: 100px;
+    background: #81C43B;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 6px;
+    /* 100% */
+}
+
+.discount svg {
+    display: none;
+}
+
+
+/* section intro starts  */
+
+
+
+
+.intro h1 {
+    width: 760px;
+    margin: 20px auto 0;
+
+    color: #35414B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    /* 112.5% */
+}
+
+.intro p {
+    width: 505px;
+    margin: 15px auto;
+
+    color: #4E5A65;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+
+
+.intro input {
+    height: 52px;
+    width: 319px;
+
+    padding: 0;
+    margin-left: 34%;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+
+    color: #97A5B5;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+}
+
+.intro button {
+    width: 164px;
+    height: 52px;
+
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #794CFF;
+    background: #794CFF;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 100% */
+}
+
+/* section intro css ends here */
+
+/* ---------------------------------------------------------------------------- */
+
+/*  graph-image css start */
+
+.graph-image {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.graph-image img {
+    width: 920px;
+    height: 654px;
+}
+
+/* section graph-image css ends here */
+
+/* ---------------------------------------------------------------------------- */
+
+/* section .team-logo starts here */
+
+.team-logo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.team-logo p {
+    color: #4E5A65;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+}
+
+.team-logo span {
+    color: #4E5A65;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.team-logo svg {
+    margin: 10px 75px;
+}
+
+/* --------------------------------------------------sec-2  start-------------------------------------------------- */
 .sec-2 {
     height: 70vh;
     width: 100%;
@@ -177,7 +343,14 @@ header li span {
     /* border: 1px solid; */
     height: 80%;
     width: 80%;
+    font-family: Inter;
+    color: #4E5A65;
     padding: 15px 10px;
+    text-align: center;
+}
+
+.sublist{
+    margin-top: 25px;
 }
 
 .sublist span {
@@ -185,20 +358,25 @@ header li span {
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
+    line-height: 2;
+    margin-top: 20px !important;
 }
 
 .sl-1 {
     background: #F6F3FC;
+    border-left: 4px solid #794CFF !important;
+    text-align: center;
+    border-left: none;
 }
 
-.sl-1::before {
+/* .sl-1::before {
     position: absolute;
     left: 12.5%;
     content: "";
     height: 60px;
     width: 4px;
     background: #794CFF;
-}
+} */
 
 .work {
     color: #35414B;
@@ -209,7 +387,7 @@ header li span {
     font-weight: 600;
 }
 
-/* ---------------------------------------------section-3--------------------------------------------------- */
+/* ---------------------------------------------sec-3 start --------------------------------------------------- */
 .sec-3 {
     margin: auto;
     height: 60vh;
@@ -231,6 +409,25 @@ header li span {
     position: absolute;
     top: 15px;
     left: 20px;
+}
+
+.sec-3 .layout_button {
+    width: 318px;
+    height: 52px;
+    
+    border-radius: 4px;
+    border: 1px solid #ECE5FF;
+    background: #ECE5FF;
+    
+    color: #7259FA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+
+    display: none;
 }
 
 .title {
@@ -265,9 +462,13 @@ header li span {
     margin: auto;
     width: 50%;
     line-height: 20px;
+    color: #4E5A65;
+    font-family: Inter;
+    padding: 30px;
+    line-height: 2;
 }
 
-/* ---------------------------------------------------sec-4-------------------------------------------------- */
+/* ---------------------------------------------------sec-4 start-------------------------------------------------- */
 .sec-4 {
     margin-top: 20px;
     height: 80px;
@@ -282,6 +483,8 @@ header li span {
     width: 25%;
     /* border: 1px solid; */
     position: relative;
+    font-family: Inter;
+    color: #4E5A65;
 }
 
 .sec-4 .box img {
@@ -306,11 +509,13 @@ header li span {
 /* -----------------------------------------------sec-5---------------------------------------------------- */
 .sec-5 {
     height: 150px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     width: 90%;
     margin: 50px auto;
+    font-family: Inter;
     background-color: #796EFF;
     display: flex;
+    border-radius: 0%;
 }
 
 .sec-5 .part {
@@ -337,58 +542,92 @@ header li span {
 
 /* ---------------------------------------footer---------------------------------------------------- */
 footer {
-    height: 200px;
+    height: auto;
     background: #1D2830;
-    border-bottom: 0.5px solid #fff;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.copyright {
-    height: 50px;
-    background: #1D2830;
-    display: flex;
-    justify-content: space-around;
-}
-
-.right-1 {
-    color: #fff;
-}
-
-.right-2 {
-    margin-top: 10px;
-}
-
-.right-2 img {
-    margin: 0 5PX;
-}
-
-footer .foot {
-    height: 200px;
-    width: 20%;
-}
-
-.foot button {
-    width: 100%;
-    height: 20px;
-}
-
-.foot li {
-    list-style-type: none;
+footer .lists {
     display: flex;
     justify-content: space-evenly;
 }
 
-.foot li,
-.foot p {
-    text-align: center;
+footer .sec ul {
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 100% */
+    margin: 60px auto;
+}
+
+footer .sec ul li {
+    color: #FFF;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
     line-height: 16px;
+    /* 100% */
+
+    list-style: none;
+    margin: 30px auto;
 }
 
-.foot .fa-solid {
+footer .s4 h3 {
+    color: var(--text-gray-100, #F4F5F7);
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 100% */
+
+    margin: 60px auto 30px auto;
+}
+
+footer .s4 svg {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+footer .copyright {
+    display: flex;
+    border-top: solid #FFF;
+    height: 60px;
+}
+
+footer .copyright p {
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 20px;
+
+
+    color: var(--text-gray-300, #D9DBE1);
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 100% */
+}
+
+.sec ul svg{
     display: none;
+    
+}
+
+
+
+footer .copyright .img {
+    margin-left: 8%;
+}
+
+footer .copyright .img svg {
+    margin: 20px 10px;
 }
