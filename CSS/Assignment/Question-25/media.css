@@ -293,6 +293,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        border-radius: 0% !important;
     }
 
     .sec-5 p {
