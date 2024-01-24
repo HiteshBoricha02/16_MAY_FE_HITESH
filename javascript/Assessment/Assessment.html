@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+  
     <title>Restaurant Booking Form</title>
+
+    
 </head>
 <body>
+
     
 
-        
+        <!-- restaurant Booking Form title -->
         <h2>Restaurant Booking Form</h2>
+
+        <!-- form start using form tag  -->
         <form id="bookingForm">
+            <!-- Drop down menu for user choice of booking full day booking half day booking and Hourly booking   -->
             <label for="bookingType">Choice of Booking:</label>
             <select id="bookingType" onchange="showOptions()">
-                <option value="fullDay">Full day booking</option>
-                <option value="halfDay">Half day booking</option>
-                <option value="hourly">Hourly booking</option>
+                <option value="fullDay">Full day booking🌱</option>
+                <option value="halfDay">Half day booking🌱</option>
+                <option value="hourly">Hourly booking🌱</option>
+
             </select>
-            
+
+            <!-- First label and input for user name  -->
             <label for="userName">User Name:</label>
             <input type="text" id="userName" required>
             
+            <!-- second input or label for user's Mobile number  -->
             <label for="mobileNumber">Mobile Number:</label>
             <input type="tel" id="mobileNumber" required>
             
+
+            <!-- Third input and label for get user's Email id  -->
             <label for="email">Email:</label>
             <input type="email" id="email" required>
             
+            <!-- Forth input and label for how many persons for booking  -->
             <label for="numberOfPersons">Number of Persons:</label>
             <input type="number" id="numberOfPersons" required>
             
+            <!-- Fifth Input and label for conformation date of booking  -->
             <div id="dateContainer">
                 <label for="date">Date:</label>
                 <input type="date" id="date" required>
             </div>
-            
+
+            <!--  six input and label for get time in user's choice  -->
             <div id="timeContainer">
                 <label for="time">Time:</label>
                 <input type="time" id="time" required>
             </div>
             
-            
+            <!--  Six last input and label for book slot for user's choice -->
             <div id="slotContainer">
                 <label for="slot">Slot:</label>
                 <select id="slot">
@@ -51,39 +66,10 @@
                 </select>
             </div>
         
-
+         <!-- Button for submit form and booking conform in users timing -->
         <button type="submit">Submit</button>
     </form>
-
-    <script>
-        function showOptions() {
-            var bookingType = document.getElementById("bookingType").value;
-            var dateContainer = document.getElementById("dateContainer");
-            var timeContainer = document.getElementById("timeContainer");
-            var slotContainer = document.getElementById("slotContainer");
-
-            dateContainer.style.display = "none";
-            timeContainer.style.display = "none";
-            slotContainer.style.display = "none";
-
-            if (bookingType === "fullDay") {
-                dateContainer.style.display = "block";
-            } 
-            else if (bookingType === "halfDay") {
-                dateContainer.style.display = "block";
-                slotContainer.style.display = "block";
-            }
-             else if (bookingType === "hourly") {
-                dateContainer.style.display = "block";
-                timeContainer.style.display = "block";
-            }
-        }
-
-        document.getElementById("bookingForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            // Handle form submission logic here
-            alert("Form submitted successfully!");
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
