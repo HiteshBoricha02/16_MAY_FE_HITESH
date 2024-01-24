@@ -1,0 +1,97 @@
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section{
+    padding: 20px 0;
+}
+
+/* header area start  */
+
+header{
+    z-index: 999;
+}
+
+header  nav ul{
+    gap: 40px !important;
+}
+
+header nav ul li a{
+    color: #111;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all .9s ease-in-out;
+}
+
+header nav ul li a:hover{
+    color: #111;
+}
+
+
+
+header nav ul li a:hover::before , header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: red;
+    left: 0;
+    transition: all .9s ease-in-out;
+    bottom: -10px;
+}
+
+.logo{
+    width: 5%;
+}
+
+
+
+
+/* accordion start  */
+
+.a-title{
+    transition: all .2s ease-in-out;
+}
+
+#a-b , #ab , #ab999 , #ab-c, #abc1111 , #xyz{
+    display: none;
+}
+
+.chevron{
+    transform: rotate(90deg);
+}
+
+table , tr , td{
+    border: 3px solid #111;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+          .button a{
+    margin-top: 40px;
+    background: blue;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    padding: 10px 20px;
+}
+
+.button a:hover{
+    background: #fff;
+    border: 2px solid blue;
+    color: blue;
+}
