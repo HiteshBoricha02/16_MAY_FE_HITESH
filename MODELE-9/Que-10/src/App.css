@@ -1,0 +1,31 @@
+
+  /* App.css */
+
+.list {
+    margin-top: 20px;
+   
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 50px;
+    background-color: lightgreen;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    background-color: #feeeec;
+    color: black;
+    padding: 5px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  h1{
+    text-align: center;
+  }
+  

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Question-2</title>
+</head>
+<body>
+
+    <!-- header start  -->
+
+    <header>
+        <div class="logo">Html <span> 5 </span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Assigment</a></li>
+            <li><a href="#">Task</a></li>
+            <li><a href="#">Assessment</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+    </header>
+
+    <!-- header End  -->
+
+    <!-- q-2 start  -->
+
+    <section class="q-2">
+        <div class="q2" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <h1>How to embed audio and video in a webpage?</h1>
+        </div>
+        <div class="ans" data-aos="fade-up"  data-aos-duration="1500">
+            <span>Ans :</span>
+            <p>
+                The HTML5 &lt;audio&gt; and &lt;video&gt; tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.
+            </p>
+        </div>
+
+        <section class="video" data-aos="fade-left" data-aos-duration="1500">
+            <video src="../image/video.mp4" loop  controls poster="../image/poster.webp">
+                <source src="../image/video.mp4">
+            </video>
+        </section>
+
+        <section>
+            <div class="box box_1" data-aos="fade-left" data-aos-duration="1500">
+                <h2>Example</h2>
+                <h4>Html</h4>
+                <p>
+                    &lt;section class="video"&gt;<br>
+                        &lt;video src="../image/video.mp4" loop  controls poster="../image/poster.webp"&gt;<br>
+                            &lt;source src="../image/video.mp4" type="video/mp4"&gt;<br>
+                        &lt;/video&gt;<br>
+                    &lt;/section&gt;<br>
+                </p>
+                <h4>Style</h4>
+                <p>
+                    section .box{<br>
+                        width: 50%;<br>
+                        margin: auto;<br>
+                        border: 2px solid blue;<br>
+                    }<br><br>
+
+                    section .box h2{<br>
+                        padding: 10px;<br>
+                        background: blue;<br>
+                        color: #fff;<br>
+                    }<br><br>
+
+                    section .box h4{<br>
+                        padding: 10px 0px 0px 20px;<br>
+                        font-size: 20px;<br>
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;<br>
+                    }<br>
+                </p>
+            </div>
+        </section>
+
+        <section class="audio">
+            <h2>Audio Tag</h2>
+            <audio src="../image/audio.mp3" controls autoplay muted>
+                <source src="../image/audio.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section>
+            <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                <h2>Example</h2>
+                <p>
+                    &lt;section class="audio"&gt;<br>
+                        &lt;audio src="../image/audio.mp3" controls autoplay muted&gt;<br>
+                            &lt;source src="../image/audio.mp3" type="audio/mp3"&gt;<br>
+                        &lt;/audio&gt;<br>
+                    &lt;/section&gt;<br>
+                </p>
+            </div>
+        </section>
+        
+
+        <div class="button">
+            <a href="../assignment/Question-1.html">Previous</a>
+            <a href="../assignment/Question_3.html">Next</a>
+        </div>
+    </section>
+
+    <!-- q-2 End  -->
+
+
+    <script>
+        AOS.init();
+    </script>
+      
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-6</title>
+
+
+
+    <style>
+
+        body{
+            height: auto;
+            width: 99%;
+            border: 1px solid blue;
+            font-family: rubik,sans-serif;
+            /* margin: auto; */
+        }
+
+
+        h1{
+            margin-top: 8%;
+            margin-left: 3%;
+        }
+
+        h2{
+            margin-left: 3%;
+        }
+
+        p,div{
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left: 9%;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1> Q-6 Write the code for adding new elements dynamically?</h1>
+   
+    <h2>Ans :</h2>
+    <section>
+        
+     <div>
+        <pre>document.getElementById('addDivButton').addEventListener('click', function () {
+            var newDiv = document.createElement('div');
+            newDiv.className = 'new-div';
+            newDiv.innerHTML = 'New Div created by clicking the button';
+            document.body.appendChild(newDiv);
+        }); </pre>
+     </div>
+        
+
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Question-4</title>
+</head>
+<body>
+    <!-- header start  -->
+
+    <header>
+        <div class="logo">Html <span> 5 </span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <div class="drop-down">
+                <li><a href="#">Assigment</a></li>
+                <div class="menu">
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">Html5</a></li>
+                </div>
+            </div>
+            <li><a href="#">Task</a></li>
+            <li><a href="#">Assessment</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+    </header>
+
+    <!-- header End  -->
+
+    <section class="q-1">
+        <div class="q1" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <h1>Canvas and SVG tags</h1>
+        </div>
+        <div class="ans" data-aos="fade-up"  data-aos-duration="1500">
+            <span>Ans :</span>
+            <p>
+                SVG : (Sclaable Vector Graphics)
+            </p>
+            <div>
+                <p> • SVG stands for Scalable Vector Graphics.</p>
+                <p> • SVG is used to define graphics for the Web.</p>
+                <p> • SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p>
+            </div>
+
+
+            <table border="1" style="display: flex; justify-content: center; width: 15%; margin-top: 5rem;">
+                <tr>
+                    <td>M</td>
+                    <td>moveto</td>
+                </tr>
+
+                <tr>
+                    <td>L</td>
+                    <td>lineto</td>
+                </tr>
+
+                <tr>
+                    <td>H</td>
+                    <td>horizontal lineto</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>vertical lineto</td>
+                </tr>
+
+                <tr>
+                    <td>C</td>
+                    <td>curveto</td>
+                </tr>
+
+                <tr>
+                    <td>S</td>
+                    <td>smooth curveto</td>
+                </tr>
+
+                <tr>
+                    <td>Z</td>
+                    <td>closepath</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="item">
+            <div class="container" style="border: none; display: flex; justify-content: center; align-items: center;">
+                <div class="left_side">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    </svg>
+                </div>
+
+                <div class="right_side">
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                        <h2>Example</h2>
+                        <p>
+                            &lt;svg width="100" height="100"&gt;<br>
+                                &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;<br>
+                            &lt;/svg&gt;<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" style="margin-top: 2rem;">
+            <div class="container" style=" display: flex; justify-content: center; align-items: center;">
+                <div class="left_side">
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                        <h2>Example</h2>
+                        <p>
+                            &lt;svg width="400" height="110"&gt;
+                                &lt;rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /&gt;
+                            &lt;/svg&gt;
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="right_side">
+                    <svg width="400" height="110">
+                        <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="canvas">
+            <div class="bpx">
+                <div class="items">
+                    <div class="ans" data-aos="fade-up"  data-aos-duration="1500">
+                        <span>Ans :</span>
+                        <p>
+                            CANVAS
+                        </p>
+                        <div>
+                            <p> • The HTML &lt;canvas&gt; element is used to draw graphics on a web page.</p>
+                            <p> • The graphic to the left is created with &lt;canvas&gt;. It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.</p>
+                            <p> • SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p>
+                        </div>
+
+                        <div class="canvas_group" style="margin-top: 5rem;">
+                            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                                Your browser does not support the HTML canvas tag.
+                            </canvas>
+
+
+                            <div class="box" data-aos="fade-right" data-aos-duration="1500" style="margin-top: 3rem; height: 23rem; text-align: left;">
+                                <h2>Example</h2>
+                                <p>
+                                    &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"&gt;<br>
+                                        Your browser does not support the HTML canvas tag.<br>
+                                    &lt;/canvas&gt;<br>
+
+                                    <p>
+                                        &lt;script&gt;<br>
+                                            var c = document.getElementById("myCanvas");<br>
+                                            var ctx = c.getContext("2d");<br>
+                                            ctx.moveTo(0,0);<br>
+                                            ctx.lineTo(200,100);<br>
+                                            ctx.fill();<br>
+                                            ctx.stroke();<br>
+                                        &lt;/script&gt;<br>
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="button">
+            <a href="../assignment/Question_3.html">Previous</a>
+        </div>
+    </section>
+
+    <!-- q-2 End  -->
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    
+    
+</body>
+</html>

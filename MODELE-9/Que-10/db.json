@@ -1,0 +1,9 @@
+
+{
+    "items": [
+      { "id": 1, "name": "USE Arry.map" },
+      { "id": 2, "name": "Not a for loop" },
+      { "id": 3, "name": "give each item a unique key" },
+      { "id": 4, "name": "avoid using arrary index as the key" }
+    ]
+  }

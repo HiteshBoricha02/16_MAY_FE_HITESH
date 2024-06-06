@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* taskbar style */
+  .taskbar,
+  header,
+  .navbarr{
+    font-size: 14px !important;
+    border-bottom: 2px solid rgb(93, 93, 93);
+  }
+  .taskbar a{
+    text-decoration: none;
+  }
+  .taskbar select{
+    border: none;
+  }
+  
+  @media only screen  and (min-width:320px) and (max-width:480px) {
+    .task-head{
+      font-size: 10px !important;
+      flex-direction: column;
+    }
+    .task-head .inner{
+      justify-content: center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .task-head .inner:nth-child(2) p, .task-head .inner:nth-child(3){
+      text-align: center !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  @media only screen  and (min-width:480px) and (max-width:768px) {
+    .task-head{
+      flex-direction: column;
+    }
+    .task-head .inner{
+      justify-content: center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .task-head .inner:nth-child(2) p, .task-head .inner:nth-child(3){
+      text-align: center !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  @media only screen  and (min-width:768px) and (max-width:1200px) {
+    .task-head{
+       font-size: 10px !important;
+    }
+  }
+  
+  
+  /* header style */
+  .fa-search{
+    cursor: pointer;
+  }
+  .hicon{
+    font-size: 22px !important;
+  }
+  .icontop{
+    font-size: 10px;
+    padding:0% 5% !important;
+    border-radius: 50% !important;
+  }
+  header .addit{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .bottomtext{
+    font-size: 10px !important;
+  }
+  
+  @media only screen  and (min-width:768px) and (max-width:992px) {
+    .main-container .brand-logo img{
+      width: 50px !important;
+      height: 50px !important;
+    }  
+  }
+  
+  @media only screen  and (min-width:320px) and (max-width:480px) {
+    .main-container{
+      flex-direction: column;
+    }
+    .main-container .brand-logo img{
+      width: 50px !important;
+      height: 50px !important;
+    }
+    .main-container .search{
+      overflow-x: hidden !important;
+    }
+    .main-container .search .all{
+      display: none;
+    }
+    .main-container .search .input-group{
+      width:60% !important;
+    }
+    .main-container .heading-inner {
+      margin-top: 0 !important;
+      text-align: center !important;
+    }
+  
+  }
+  @media only screen  and (min-width:480px) and (max-width:768px) {
+    .main-container{
+      flex-direction: column;
+    }
+    /* .main-container .brand-logo img{
+      width: 40% !important;
+    } */
+    .main-container .heading-inner{
+      margin: 0 !important;
+      padding: 0 !important ;
+      text-align: center !important;
+    }
+  }
+  
+  
+  
+  /* navbar style */
+  .fa-th-large{
+    width: 20%;
+  }
+  .browserbtn{
+    width: 80%;
+    font-size: 12px !important;
+  }
+  .navbartab{
+    font-size: 14px !important;
+    border-bottom: 2px solid rgb(93, 93, 93);
+  }
+  .helptext{
+    font-size: 12px !important;
+  }
+  @media only screen and (min-width:320px) and (max-width:1200px) {
+    .callanytime h4, .callanytime i , .callanytime p{
+      display: none !important;
+    }
+  }
+  @media only screen and (min-width:480px) and (max-width:576px) {
+    .frontbtn{
+      width: 25% !important;
+      font-size: 10px !important;
+    }
+    .navbarr .Row{
+      display: flex !important;
+    }
+    .navigation{
+      width: 75% !important;
+    }
+  
+  }
+  
+  /* slider style */
+  .carousel-indicators button{
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #3cb27b !important;
+  }
+  .firstslide{
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .firstslide .signup{
+    text-decoration: none;
+    color: rgb(19, 62, 0) !important;
+    font-weight: 500 !important;
+    line-height: 50px;
+  }
+  .firstslide .emailinput{
+    border-radius: 30px !important;
+  }
+  .firstslide .inputbtn{
+    border-radius: 30px !important;
+  }
+  .secondslide{
+    padding: 100% auto;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .secondslide-inner-container{
+    margin: 12.9% auto;
+  }
+  .healthhead{
+    font-size: 60px !important;
+  }
+  .healthline{
+    letter-spacing: 7px;
+    font-weight: 500;
+  }
+  
+  @media only screen and (min-width:992px) and (max-width:1200px) {
+    .secondslide-inner-container{
+      margin: 12.5% auto !important;
+    }
+    .healthhead{
+      font-size: 50px !important;
+    }
+    .healthline{
+      letter-spacing: 7px;
+      font-weight: 500;
+    }
+  }
+  
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    .firstslide{
+      margin-top: -5% !important;
+      padding: 0 !important;
+    }
+    .slider-content{
+      margin-left: 3% !important;
+    }
+    .secondslide-inner-container{
+      margin: 11.3% auto !important;
+    }
+    .healthhead{
+      font-size: 45px !important;
+    }
+    .healthline{
+      letter-spacing: 7px;
+      font-weight: 500;
+    }
+  }
+  
+  @media only screen and (min-width:576px) and (max-width:768px) {
+    .slider-content{
+      margin-top: 5%;
+    }
+    .slider-content h1{
+      font-size:20px ;
+    }
+    .slider-content .signup {
+      font-size: 15px !important;
+      line-height: 20px;
+    }
+    .input-group button{
+      width: 30% !important;
+      padding: 0 !important;
+    }
+    .secondslide-inner-container{
+      margin: 10.4% auto;
+    }
+    .healthhead{
+      font-size: 25px !important;
+    }
+    .healthline{
+      font-size: 12px !important;
+      letter-spacing: 3px;
+      font-weight: 100 !important;
+    }
+  }
+  
+  @media only screen and (min-width:480px) and (max-width:576px) {
+    .secondslide-inner-container{
+      margin: 11.5% auto !important;
+    }
+    .healthhead{
+      font-size: 20px !important;
+    }
+    .healthline{
+      font-size: 15px !important;
+      letter-spacing: 3px;
+      font-weight: 100 !important;
+    } 
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:576px) {
+    .slider-content h1{
+      font-size:18px ;
+    }
+    .slider-content .signup {
+      font-size: 12px !important;
+      line-height: 20px;
+    }
+    .input-group i{
+      /* margin: 0 !important; */
+      padding: 1% !important;
+    }
+    .input-group input{
+      padding: 1% !important;
+    }
+    ::placeholder{
+      font-size: 12px !important;
+      padding-top: -3% !important;
+    }
+    .input-group button{
+      font-size: 10px !important;
+      padding: 0% !important;
+      width: 30% ;
+    }
+    .slider-content{
+      width: 70% !important;
+      padding: 5%;
+    }
+    .image-content{
+      width: 30% !important;
+      display: flex !important;
+      justify-content: start !important;
+      align-items: center !important;
+    }
+    .image-content img{
+      height: 70% !important;
+      width: 100% !important;
+    }
+    .secondslide-inner-container{
+      margin: 13.3% auto;
+    }
+    .healthhead{
+      font-size: 20px !important;
+    }
+    .healthline{
+      font-size: 15px !important;
+      letter-spacing: 3px;
+      font-weight: 100 !important;
+    }
+  
+  }
+  
+  
+  /* slickslider style*/
+  .categories{
+    display: inline;
+  }
+  .buttons button{
+    border-radius: 50% !important;
+  }
+  .sliderbox{
+    background-color: #feeeec;
+    border-radius: 10px;
+  }
+  .sliderbox img{
+    height: 200px !important;
+    width: 100% !important;
+  }
+  
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    .categories{
+      font-size: 23px;
+      display: inline;
+    }
+    #slickslider span{
+      font-size: 12px;
+    }
+    .sliderbox img{
+      height: 170px !important;
+      width: 100% !important;
+    } 
+    .sliderbox h4{
+      font-size: 18px;
+    }
+    .sliderbox p{
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (min-width:576px) and (max-width:768px) {
+    .categories{
+      display: block;
+    }
+    .fa-arrow-left,.fa-arrow-right{
+      font-size:12px !important ;
+    }
+    .sliderbox img{
+      height: 140px !important;
+      width: 100% !important;
+    } 
+    .sliderbox h4{
+      font-size: 18px;
+    }
+    .sliderbox p{
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:576px) {
+    .categories{
+      font-size: 15px;
+      display: block;
+      margin-bottom: 0 !important;
+    }
+    #slickslider span{
+      font-size: 8px;
+    }
+    .buttons{
+      display: none;
+    }
+    .sliderbox img{
+      padding: 2% !important;
+      height: 80px !important;
+      width: 100% !important;
+    } 
+    .sliderbox h4{
+      font-size: 13px;
+    }
+    .sliderbox p{
+      font-size: 12px;
+      padding-bottom:  0 !important;
+    }
+  }
+  
+  
+  

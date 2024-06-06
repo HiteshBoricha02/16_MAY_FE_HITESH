@@ -1,0 +1,176 @@
+
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    z-index: 999;
+}
+
+header  nav ul{
+    gap: 40px !important;
+}
+
+header nav ul li a{
+    color: #111;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all .9s ease-in-out;
+}
+
+header nav ul li a:hover{
+    color: #111;
+}
+
+
+
+header nav ul li a:hover::before , header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: red;
+    left: 0;
+    transition: all .9s ease-in-out;
+    bottom: -10px;
+}
+
+.logo{
+    width: 5%;
+}
+
+
+
+
+body{
+    padding: 0;margin: 0;
+}
+
+.parent{
+    display: flex;
+    position: relative;
+}
+
+.parent .main-div {
+    width: 55%;
+    height: 738px;
+    background-color: #202020;
+}
+
+.parent .main-div .frame{
+    width: fit-content;
+    margin-left: 180px;
+    margin-top: 150px;
+}
+
+.parent .main-div .service {
+    display: flex;
+    width: 587px;
+}
+
+.parent .main-div .service h1 {
+    width: fit-content;
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #f4f5f9;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-left: 251px;
+}
+
+.parent .main-div .service h2 {
+    width: 6px;
+    height: 36px;
+    margin-top: 25px;
+    margin-left: 10px;
+    background-color: #e74c3c;
+}
+
+.parent .main-div .write p {
+
+    width: 587px;
+    height: 74px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #999999;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+.parent .main-div .write h3 {
+    width: 587px;
+    height: 25px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #e74c3c;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: right;
+    margin: 0;
+}
+
+.parent .div-2 {
+    width: 45%;
+    height: 738px;
+    background-color: wheat;
+    background-image: url("./put\ your\ image.jpeg");
+    background-size: 100% 100%;
+}
+
+.img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    outline: 5px solid rgba(255, 255, 255, 0.300);
+}
+
+.img1{
+    left: 53.5%;
+    top: 270px;
+}
+
+.img2{
+    left: 53.5%;
+    top: 390px;
+}
+
+.img3{
+    left: 53.5%;
+    top: 510px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+          .button a{
+    margin-top: 40px;
+    background: blue;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    padding: 10px 20px;
+}
+
+.button a:hover{
+    background: #fff;
+    border: 2px solid blue;
+    color: blue;
+}
