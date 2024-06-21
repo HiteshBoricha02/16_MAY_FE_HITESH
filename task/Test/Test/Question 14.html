@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Multiplication and Division Calculator</title>
+     <style>
+          form {
+               display: flex;
+               flex-direction: column;
+          }
+
+          label {
+               margin-bottom: 5px;
+          }
+
+          input {
+               margin-bottom: 10px;
+               width: 20%;
+          }
+
+          .button-container {
+               display: flex;
+               gap: 10px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 14 -->
+
+     
+
+     <form>
+          <label for="num1">Enter the first number:</label>
+          <input type="number" id="num1" required>
+
+          <label for="num2">Enter the second number:</label>
+          <input type="number" id="num2" required>
+
+          <div class="button-container">
+               <button type="button" onclick="multiply()">Multiply</button>
+               <button type="button" onclick="divide()">Divide</button>
+          </div>
+     </form>
+
+     <div id="result"></div>
+
+     <script>
+          function multiply() {
+               performCalculation('*');
+          }
+
+          function divide() {
+               performCalculation('/');
+          }
+
+          function performCalculation(operator) {
+               
+               const num1 = parseFloat(document.getElementById('num1').value);
+               const num2 = parseFloat(document.getElementById('num2').value);
+
+               
+               if (isNaN(num1) || isNaN(num2)) {
+                    document.getElementById('result').innerHTML = 'Please enter valid numbers.';
+                    return;
+               }
+
+               
+               let result;
+               if (operator === '*') {
+                    result = num1 * num2;
+               } else if (operator === '/') {
+                    result = num1 / num2;
+               }
+
+               document.getElementById('result').innerHTML = 'Result: ' + result;
+          }
+     </script>
+
+</body>
+
+</html>

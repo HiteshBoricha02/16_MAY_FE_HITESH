@@ -1,0 +1,142 @@
+:root {
+     --primary-color: #3498db;
+     --font-size: 16px;
+}
+
+
+
+*{
+     text-decoration: none !important;
+     list-style: none !important;
+     box-sizing: border-box;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ section{
+     padding: 20px 0;
+ }
+ 
+ /* header area start  */
+ 
+ /* header{
+     z-index: 999;
+ }
+ 
+ header  nav ul{
+     gap: 40px !important;
+ }
+ 
+ header nav ul li a{
+     color: #111;
+     font-weight: 400;
+     font-size: 20px;
+     letter-spacing: 1px;
+     position: relative;
+     transition: all .9s ease-in-out;
+ }
+ 
+ header nav ul li a:hover{
+     color: #111;
+ }
+ 
+ 
+ 
+ header nav ul li a:hover::before , header nav ul li a:hover::after{
+     width: 100%;
+ }
+ 
+ header nav ul li a::after{
+     content: "";
+     position: absolute;
+     width: 0%;
+     height: 3px;
+     background: red;
+     left: 0;
+     transition: all .9s ease-in-out;
+     bottom: -10px;
+ }
+ 
+ .logo{
+     width: 5%;
+ }
+ 
+ 
+ 
+ 
+ 
+
+body {
+     background-color: var(--primary-color);
+     font-size: var(--font-size);
+}
+
+.header {
+     color: var(--primary-color);
+}
+
+
+.button{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     }
+ 
+           .button a{
+     margin-top: 40px;
+     background: blue;
+     color: #fff;
+     transition: all .2s ease-in-out;
+     padding: 10px 20px;
+ }
+ 
+ .button a:hover{
+     background: #fff;
+     border: 2px solid blue;
+     color: blue;
+ }
+
+
+ */
+
+
+
+
+ header {
+     background-image: url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     position: relative;
+   }
+   
+   header .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.5); /* Text overlay to set background brightness */
+     display: flex;
+     flex-direction: column;
+     
+     justify-content: center;
+     align-items: center;
+   }
+   
+   header h1 {
+     margin-bottom: 20px;
+   }
+   
+   header p {
+     margin-bottom: 40px;
+   }
+   
+   
+   .navbar-nav .nav-link {
+     margin-right: 15px;
+   }
+   
+   .navbar-nav .nav-link:last-child {
+     margin-right: 0;
+   }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Current Day and Time</title>
+</head>
+
+<body>
+
+     <!-- Question 12 -->
+
+     
+
+     <script>
+         
+          let currentDate = new Date();
+
+          
+          let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+          
+          let currentDay = daysOfWeek[currentDate.getDay()];
+
+         
+          let currentHour = currentDate.getHours();
+          let currentMinute = currentDate.getMinutes();
+          let currentSecond = currentDate.getSeconds();
+
+          
+          let output = "Today is: " + currentDay + ".<br>";
+          output += "Current Time is: " + formatTime(currentHour) + ":" + formatTime(currentMinute) + ":" + formatTime(currentSecond);
+
+          
+          document.body.innerHTML = output;
+
+          
+          function formatTime(time) {
+               return (time < 10) ? "0" + time : time;
+          }
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Reverse Number Example</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               text-align: center;
+               margin: 50px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 15 -->
+
+     
+
+     <h2>Number Reversal Example</h2>
+
+     <script>
+          function reverseNumber(x) {
+             
+               let numString = x.toString();
+
+               
+               let reversedString = numString.split('').reverse().join('');
+
+               
+               let reversedNumber = parseInt(reversedString, 10);
+
+               return reversedNumber;
+          }
+
+         
+          const originalNumber = prompt("Enter The Number You want to reserve");
+          const reversedNumber = reverseNumber(originalNumber);
+
+          
+          document.write('<p>Original Number: ' + originalNumber + '</p>');
+          document.write('<p>Reversed Number: ' + reversedNumber + '</p>');
+     </script>
+
+</body>
+
+</html>

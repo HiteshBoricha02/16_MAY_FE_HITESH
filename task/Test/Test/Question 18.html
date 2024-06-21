@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Find Highest Value in Array Example</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               text-align: center;
+               margin: 50px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 18 -->
+
+     
+
+     <h2>Find Highest Value in Array Example</h2>
+
+     <script>
+          function findHighestValue(arr) {
+              
+               if (arr.length === 0) {
+                    return 'Array is empty';
+               }
+
+               
+               const highestValue = Math.max.apply(null, arr);
+
+               return highestValue;
+          }
+
+          
+          let testData = [120, 42, 75, 95, 105];
+          let highestValue = findHighestValue(testData);
+
+          
+          document.write('<p>Highest Value: ' + highestValue + '</p>');
+     </script>
+
+</body>
+
+</html>

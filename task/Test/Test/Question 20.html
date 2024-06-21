@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Get Started Form</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha384-rnsZcp8OW9nLoUvcsUbQth7Mj2bP7j3nLIA6AqABJ6LuLZ8srO6yRafW2YTW7z4l" crossorigin="anonymous">
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               background-color: #f2f2f2;
+               margin: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 100vh;
+          }
+
+          form {
+               background-color: #ffffff;
+               padding: 20px;
+               border-radius: 10px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               width: 300px;
+               text-align: center;
+          }
+
+          h1 {
+               margin-bottom: 20px;
+          }
+
+          label {
+               display: block;
+               margin-bottom: 5px;
+          }
+
+          input {
+               width: 100%;
+               padding: 8px;
+               margin-bottom: 15px;
+               box-sizing: border-box;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+          }
+
+          input::placeholder {
+               text-align: center;
+          }
+
+          .icon {
+               display: inline-block;
+               margin-right: 10px;
+               vertical-align: middle;
+          }
+
+          .error-message {
+               color: red;
+               margin-top: 5px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 20 -->
+
+     
+
+     <form onsubmit="return validateForm()">
+          <h1>Get Started</h1>
+
+          <label for="username">
+               <span class="icon"><i class="fas fa-user"></i></span>
+               User Name
+          </label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+          <label for="email">
+               <span class="icon"><i class="fas fa-envelope"></i></span>
+               Email
+          </label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">
+               <span class="icon"><i class="fas fa-lock"></i></span>
+               Password
+          </label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          <button type="submit">Submit</button>
+          <div id="error-message" class="error-message"></div>
+     </form>
+
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+          integrity="sha384-F4L0LLGh3a5gD8EvMTYrqaolDLMwXeVFBDeP0iZb6O6b8aIq6PiU7LdCOWzMG8ga"
+          crossorigin="anonymous"></script>
+
+     <script>
+          function validateForm() {
+               let username = document.getElementById('username').value;
+               let email = document.getElementById('email').value;
+               let password = document.getElementById('password').value;
+               let errorMessage = document.getElementById('error-message');
+
+               
+               if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+                    errorMessage.textContent = 'All fields are required';
+                    return false; 
+               }
+
+               
+               errorMessage.textContent = '';
+
+               return true;
+          }
+     </script>
+
+</body>
+
+</html>

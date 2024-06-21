@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Random Integer Generator Example</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               text-align: center;
+               margin: 50px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 17 -->
+
+     
+
+     <h2>Random Integer Generator Example</h2>
+
+     <script>
+          function getRandomInteger(min, max) {
+               
+               return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+
+          
+          let randomExample1 = getRandomInteger(1000, 9999);
+          let randomExample2 = getRandomInteger(1000, 9999);
+          let randomExample3 = getRandomInteger(1000, 9999);
+
+          
+          document.write('<p>Random Number 1: ' + randomExample1 + '</p>');
+          document.write('<p>Random Number 2: ' + randomExample2 + '</p>');
+          document.write('<p>Random Number 3: ' + randomExample3 + '</p>');
+     </script>
+
+</body>
+
+</html>

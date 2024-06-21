@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Print Current Window Contents</title>
+</head>
+
+<body>
+
+     <!-- Question 13 -->
+
+    
+     <button onclick="printWindowContents()">Print Window Contents</button>
+
+     <script>
+          function printWindowContents() {
+               
+               let printWindow = window.open('', '_blank');
+               printWindow.document.write('<html><head><title>Print</title></head><body>');
+               printWindow.document.write(document.documentElement.innerHTML);
+               printWindow.document.write('');
+
+               
+               printWindow.document.close();
+
+               
+               printWindow.print();
+          }
+     </script>
+
+</body>
+
+</html>

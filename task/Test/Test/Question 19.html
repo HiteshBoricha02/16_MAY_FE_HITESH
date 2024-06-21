@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Find Lowest Value in Array Example</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               text-align: center;
+               margin: 50px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <!-- Question 19 -->
+
+     <!-- Example Is below -->
+
+     <h2>Find Lowest Value in Array Example</h2>
+
+     <script>
+          function findLowestValue(arr) {
+             
+               if (arr.length === 0) {
+                    return 'Array is empty';
+               }
+
+              
+               const lowestValue = Math.min.apply(null, arr);
+
+               return lowestValue;
+          }
+
+         
+          let testData1 = [120, 44, 65, 5];
+          let lowestValue1 = findLowestValue(testData1);
+
+          let testData2 = [-120, -94, 0, -66, -1];
+          let lowestValue2 = findLowestValue(testData2);
+
+          
+          document.write('<p>Lowest Value in Array 1: ' + lowestValue1 + '</p>');
+          document.write('<p>Lowest Value in Array 2: ' + lowestValue2 + '</p>');
+     </script>
+
+</body>
+
+</html>

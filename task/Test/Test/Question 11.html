@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+          body {
+               margin: 0;
+               padding: 0;
+               font-family: 'Arial', sans-serif;
+          }
+
+          /* Navbar styles */
+          nav {
+               background-color: #333;
+               padding: 10px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+
+          .brand {
+               color: white;
+               text-decoration: none;
+               font-size: 1.5em;
+          }
+
+          nav a {
+               color: white;
+               text-decoration: none;
+               padding: 10px;
+          }
+
+          nav ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               display: flex;
+          }
+
+          nav li {
+               margin-left: 15px;
+          }
+
+          #hamburger {
+               display: none;
+               cursor: pointer;
+               font-size: 1.5em;
+          }
+
+          /* Hero section styles */
+          .hero {
+               position: relative;
+               height: 500px;
+               background: url('https://via.placeholder.com/1600x500') center/cover;
+               /* Placeholder image */
+               color: white;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+
+          .hero h1 {
+               margin-bottom: 20px;
+          }
+
+          .hero p {
+               max-width: 600px;
+               margin-bottom: 20px;
+          }
+
+          .hero-buttons {
+               display: flex;
+               gap: 5px;
+               justify-content: center;
+          }
+
+          .hero-buttons button {
+               padding: 10px;
+               border: none;
+               border-radius: 20px;
+               cursor: pointer;
+          }
+
+          /* Responsive styles */
+          @media screen and (max-width: 600px) {
+               #hamburger {
+                    display: block;
+                    color: white;
+               }
+
+               nav ul {
+                    display: block;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    background-color: #333;
+                    width: 100%;
+               }
+
+               nav ul.active {
+                    display: flex;
+               }
+
+               nav li {
+                    margin: 0;
+                    padding: 10px;
+                    text-align: center;
+                    width: 100%;
+               }
+          }
+
+          /* Other styling */
+          button.watch-more {
+               background-color: #3498db;
+               color: white;
+          }
+
+          button.subscribe {
+               background-color: #27ae60;
+               color: white;
+          }
+     </style>
+
+</head>
+
+<body>
+
+     <!-- Question 11 -->
+
+     <!-- Example Is below -->
+
+     <!-- Navbar -->
+     <nav>
+          <a class="brand" href="#">Rentored</a>
+          <div id="hamburger">&#9776;</div>
+          <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Bedroom</a></li>
+               <li><a href="#">Kitchen</a></li>
+               <li><a href="#">Livingroom</a></li>
+               <li><a href="#">Backyard</a></li>
+          </ul>
+     </nav>
+
+     <!-- Hero section -->
+     <div class="hero">
+          <h1>DESIGN YOUR HOUSE</h1>
+          <p>Subscribe to the Rentored YouTube channel for the latest designs. Follow Rentored on Facebook and Instagram
+               for more updates.</p>
+          <div class="hero-buttons">
+               <button class="watch-more">Watch More</button>
+               <button class="subscribe">Subscribe</button>
+          </div>
+     </div>
+
+     <script>
+          document.getElementById('hamburger').addEventListener('click', function () {
+               var navList = document.querySelector('nav ul');
+               navList.style.display = (navList.style.display === 'flex' || navList.style.display === '') ? 'none' : 'flex';
+          });
+
+          window.addEventListener('resize', function () {
+               var navList = document.querySelector('nav ul');
+               if (window.innerWidth > 600) {
+                    navList.style.display = 'flex';
+               } else {
+                    navList.style.display = 'none';
+               }
+          });
+     </script>
+
+</body>
+
+</html>
